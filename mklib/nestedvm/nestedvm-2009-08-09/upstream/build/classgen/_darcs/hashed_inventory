@@ -1,0 +1,373 @@
+pristine:0000000272-24e6587f41adf3ebf3f5a1f42beaad0fda8146e7a177fc5690dbd99f3e895fe8
+[sort of working
+brian@brianweb.net**20040525050642] 
+hash: 0000041949-c7945f2e3ef4438f5aed41a336d9a49b7e9cff643467831ec6b07ae9b820b137
+[tons of stuff
+brian@brianweb.net**20040526150828] 
+hash: 0000067581-510ea5f9213bbfecfcb82abf41cfc606d96c40dcc6bde88f4e4d0e453db9df3e
+[fix xSTORE bugs
+brian@brianweb.net**20040527012912] 
+hash: 0000001777-3db1043530df703711187a29b7af7c17a5dc997ba9e39f1b3549126bcdb4ac69
+[tons more stuff
+brian@brianweb.net**20040527043532] 
+hash: 0000011154-8d2e7c85d764325fc421f2a46010edcc43528fb4e3d1d65af0fcb2d727639b0f
+[last few fixmes
+brian@brianweb.net**20040527045614] 
+hash: 0000000419-fc890ad2d2f8e2f60f0a6470667c657b3ed2592ad23adccfa1e3ef7ed1ee6b8e
+[cp cleanup, setsourcefile
+brian@brianweb.net**20040527070346] 
+hash: 0000005398-984199b4fbd23141e5702d0a353d09a577b1c7adc010cc2aeff041c3321ca675
+[more sanity checking
+brian@brianweb.net**20040528093348] 
+hash: 0000000939-def7a853fd8e8a6e395bc819735036d935d69a1ee357fc0ddd205a1d5a6a912e
+[fix Type.equals
+brian@brianweb.net**20040528162948] 
+hash: 0000000990-f980aed099411ad9146f1bb2db9e45eddef366b3e98132a42495948eab5cd43c
+[misc cleanup/perf enhancement
+brian@brianweb.net**20040528163037] 
+hash: 0000011701-855f5194bccd2a9fd154bfe1777190afca0e8ca9474aababfa43a8c22ca3ed1a
+[off by one SIPUSH error (not a bug)
+brian@brianweb.net**20040528170353] 
+hash: 0000000286-190bd144e335c20cddbf8e602318cf5ea29bbfce8383bdcf9d1a788683ebb06f
+[off by one overflow check bug
+brian@brianweb.net**20040528191216] 
+hash: 0000000350-b3c5394b22c7bd8940b484a344c535b1ac66cd5033c191c17b86aca024f889fd
+[better error for modification attempts after finish()
+brian@brianweb.net**20040529053844] 
+hash: 0000000946-f29cbaf7f60b1b6cd490ca5fe6bec6793c026a492fb2479825a172fcaf0161fd
+[minor bug fixes
+brian@brianweb.net**20040529091700] 
+hash: 0000000814-ac05da35dfe3c462305a40b22e720e410e8d937d1eea94db3efdfa67f8dc157c
+[fix iinc bug
+brian@brianweb.net**20040530212800] 
+hash: 0000000217-d13fab80d553f0de3f928105c4373cc0ae6d12ca57debeec8020514582050821
+[add support for ConstantValue attribute
+brian@brianweb.net**20040530213040] 
+hash: 0000000991-060eaa2624a03db1716aee1058ba52e847b64ea811c47710efd6d7a28c604379
+[misc cleanup and javadoc comments
+brian@brianweb.net**20040530213156] 
+hash: 0000018167-733c02219f5e4bd99554b3a7c706309e3fc28d4b2acb6c2bd5f9bf7119e1647c
+[license stuff
+brian@brianweb.net**20040530214733] 
+hash: 0000027201-ccb4ba29ddc5bc9f816084ca1b5ef92fd393886f06db1805099aa09bf2746529
+[doc cleanup
+brian@brianweb.net**20040530214745] 
+hash: 0000003598-a51f0728239735ffea9888d415c6a243fa7ecf0d43d76f192cda4906bd54b8e1
+[html fix
+brian@brianweb.net**20040530220610] 
+hash: 0000000784-50c2bc14f6c230cfcf9c9306529293c46b2024e1082e02a0933534c7a0589b0e
+[WIDE support
+brian@brianweb.net**20040601061852] 
+hash: 0000002661-bd21db6d811f8aca19bcf42a8391a8160ce6b8fb81078c6acb181eb1f3306879
+[interface support
+brian@brianweb.net**20040601061946] 
+hash: 0000001693-c4b4f88426fd721766092cdde855065537df3567818b8d34395f606878bca614
+[cleanup WIDE stuff
+brian@brianweb.net**20040603224032] 
+hash: 0000004436-9111316c75ba5ce8052ec1f8d5a4ad144043a761544be91cf2176024c71ca15e
+[optimized constant pool
+brian@brianweb.net**20040603235823] 
+hash: 0000006948-6a5f1ba4e44856dbfc1fbf99acf892d52aa82afaac6caf0d8f016b54b28d346a
+[remove debugging changes
+brian@brianweb.net**20040604000324] 
+hash: 0000000460-5c5ea14b6e9de874b744cdda9ab3dcc4d22d23abbaf88876f74ed0666dc24d2b
+[totally broken reading support - does not compile
+brian@brianweb.net**20050601103237] 
+hash: 0000011991-f40bc099161cb9d8f146c054695009496dccb04fd29b322e28cb6090d1e12169
+[got it to compile
+adam@megacz.com**20050602074653] 
+hash: 0000004011-e78035e36e729d70861a1afd40e6432a69aec9aae02aab766e7ea510cbe3521f
+[added Type.Array
+adam@megacz.com**20050603004657] 
+hash: 0000003324-8ab35ffe97eb7b9899981d19d591e70f46ad30afa93c169423249cf0b3621ebc
+[formatting only: added spaces after commas
+adam@megacz.com**20050603004954] 
+hash: 0000018308-3d800da648e73764116a7824742a2b90f9f6be9549e1ed40ccd20eb4aabf9444
+[renamed Type.Array.arrayify to _initHelper
+adam@megacz.com**20050603005225] 
+hash: 0000000433-6c79cb8e217055f94d594b10db1d4002de4a2de6c7a023a8f38bb928afc16667
+[stubs for functions which should not be invoked on Type.Array
+adam@megacz.com**20050603005607] 
+hash: 0000000333-c508320c44c3e3ac9c733ec904cfd78b65a432305d744852b29ef431cecc1a94
+[implemented AttrGen(DataInput)
+adam@megacz.com**20050603010955] 
+hash: 0000001182-ca1f7876ac02b2573c42c538cb3112bd4b9256496e50221d89f89e13a7a78e0d
+[finished support for reading in everything except method bodies
+adam@megacz.com**20050603032130] 
+hash: 0000018627-87bd41550c7909c5bf6b096f701723af96a938b39866fa2a159adf7d717b97b7
+[made the makeArray() methods into instance methods
+adam@megacz.com**20050603033620] 
+hash: 0000001252-1da6e8769216dcb3c56c08f268a6785bcb10b86b2617988c5d880b563479e31a
+[bugfix; removed isValidDescriptorName(); it wasn't doing anything
+adam@megacz.com**20050603033823] 
+hash: 0000000253-fc486bef06a7e2688532f4a1c5deb724b82d284aaf4f662373ea739d1419f9e6
+[formatting only
+adam@megacz.com**20050603034123] 
+hash: 0000002992-a121f2c85ff968af45bd4ea9de930c19b13c0f8866d49d56637adeed1100b810
+[massive cleanup of Type.java; introduced human-readable toString() and one-instance-per-descriptor
+adam@megacz.com**20050603035904] 
+hash: 0000008264-db237cfe5881328c91e0c43985d6204fc04a7be1e3e7ae11b18106f641ac1fb1
+[introduced Type.Ref as common superclass of Type.Class and Type.Array
+adam@megacz.com**20050603040950] 
+hash: 0000004566-0c2c2d110cd060b06cbc1422c9a7a0c1d288c9bf56142f18ad2d29479bbc16ce
+[renamed Type.fromDescriptor() to Type.instance()
+adam@megacz.com**20050603041154] 
+hash: 0000001325-f4756d6dfb691633f4289be9ed6709580e0e09af8298a9b4cab309ffa2310de1
+[made all CPGen.FooEnt classes non-static, since they needed a reference to their outer class anyways
+adam@megacz.com**20050603041510] 
+hash: 0000003319-11d06fb1707d9185d5b4cc9e3599c08f5e9f5f8b77abd1009587b7cb94138509
+[broke IntEnt into IntEnt and FloatEnt
+adam@megacz.com**20050603041958] 
+hash: 0000001949-640ff1d795239e81c00056abdc92e5610fdcc4f2009c7bcae485e55b24dc5af3
+[ClassGen->ClassFile, ClassGen.FieldOrMethodRef->MemberRef
+adam@megacz.com**20050603052647] 
+hash: 0000004551-4b4631343b733ea4724cd987ece9a8bf4e4bf8b0c394c53cd46f566b38b26c5d
+[cleanup of MethodRef, FieldRef, MemberRef
+adam@megacz.com**20050603054115] 
+hash: 0000004223-cfbc40aace144f94ba89e72ceea8d16b51e59461de4d7d38636194527852e2b5
+[eliminated MethodRef.I
+adam@megacz.com**20050603054435] 
+hash: 0000001678-a52e2d89d698fcf5e5cc494333aa3800245205a4ea3504058f900accf97ca711
+[fixed bug where ['s were getting appended instead of prepended
+adam@megacz.com**20050603054605] 
+hash: 0000000956-7be928a873d657eb7f3ba7d4a2ae5508ef644545c8eba44b5dc71f64560d9299
+[pulled {Method,Member,Field}Ref into Type.Class; made them inner classes; much cleaner
+adam@megacz.com**20050603055751] 
+hash: 0000009086-4a3a3f1afb55c34daba9d6b916c59ef0a560d7db6c4e68605096673cc38dd0bd
+[removed ClassFile.sourceFile; use attributes.get() instead
+adam@megacz.com**20050603060359] 
+hash: 0000001855-4a0ddaf27c1015616d0161d887ca28f0a90cce53aa43218b970d250601a1b1d0
+[rename CPGen -> ConstantPool
+adam@megacz.com**20050603061117] 
+hash: 0000001534-299e33dcfb50e12187575b76ac4759a8b191319c6ceddc414324a4113a741f97
+[LongEnt split into DoubleEnt and LongEnt
+adam@megacz.com**20050603061501] 
+hash: 0000001649-7d412aa8df5120872973ad781121a54657f95d8c07f66563c1a2acaf33127a8e
+[formatting only
+adam@megacz.com**20050603061522] 
+hash: 0000007850-a508491f1ac796cc9e65a6ccb9d8c9517659d64ec9c25775ea2a8934c7353e68
+[just a variable renaming
+adam@megacz.com**20050603062345] 
+hash: 0000001396-782d0af7d1a1a9380595f75e043791c64926da9fd7ee78dd89563576d90245cd
+[added Code.java
+adam@megacz.com**20050603073955] 
+hash: 0000003753-7cecf39f4e8c60c4d1c5beb311f6e2ec8ed62402d40b4cbe29a1d15993878945
+[updates to CGConsts, generator program
+adam@megacz.com**20050627074116] 
+hash: 0000004514-b3b67d9f2b480f1ce4a70b1cd71f5a8d0fe1e1e7367fdf1e61105fb6d66aaa4a
+[un-fixed Type.java
+adam@megacz.com**20050627080710] 
+hash: 0000002720-69c7fb8acdda083623fd707d7708b399a8c9c612e5b84053be376ca28498489e
+[brians changes to ConstantPool
+adam@megacz.com**20050627081104] 
+hash: 0000023608-f4a0c6e85ebdaf1a0089747d77a584c10c6a38229b4137d542b3bd2ac9b3f53c
+[brians changes to FieldGen
+adam@megacz.com**20050627081156] 
+hash: 0000002750-cbad1257f2de2b520843aabc513bd55622f3ea5733e64525490067e8efb2485e
+[brians changes to MethodGen
+adam@megacz.com**20050627081205] 
+hash: 0000033227-bc04bc5306b845a538a6a79e367343c4c36190d293a19637668014e2212e81f0
+[brians changes to ClassFile
+adam@megacz.com**20050627081237] 
+hash: 0000012821-2930b410c629d1a1443802a578f8798c420f17a623512f3968ad7085102ac830
+[mass rename: ACC_FOO => FOO
+adam@megacz.com**20050627081749] 
+hash: 0000008216-6d39295deae78765cb914df9f4f919e2e44c066f9a6832ad294dce31367bb690
+[refactored a lot of functionality up from MethodGen into Type.Class.Method
+adam@megacz.com**20050627083001] 
+hash: 0000005683-00e088546e51873e41c293d9b4e24f705aaffa307df19f95260812b8c1dc4645
+[removed redundant ownerInterface argument
+adam@megacz.com**20050627083310] 
+hash: 0000001383-67c2c11ae4b4cab01392fdb63ab909699eee6dc0d08f813011bb2dc31a189c73
+[reformatting
+adam@megacz.com**20050627083731] 
+hash: 0000031653-9ca878549511e7caa8e378cccaed22150880b2c2a8c2897d1c465954a42c9ac0
+[bugfixes
+adam@megacz.com**20050627083853] 
+hash: 0000000848-544f3a86bb38b7acdb2e01571bf271599f69108c4c032c25a1de75d4df02b04e
+[formatting
+adam@megacz.com**20050627084213] 
+hash: 0000006998-49b770b81ba3842c1ea529f0ade579032977c55c9edf677963c9a2ec2d6e58d7
+[formatting
+adam@megacz.com**20050627084258] 
+hash: 0000002985-b08a93da542d879959a53399df342e376dbe607b52fac0984da38360475f9698
+[more reformatting
+adam@megacz.com**20050627085526] 
+hash: 0000002558-67c048ea45b6fcdb5b98954365123f563d6c566fdd8baf5e356fedc220177730
+[massive rewrite of Code.java
+adam@megacz.com**20050630070501] 
+hash: 0000023056-50d07772695db4ae0583c7b20d8645a1ccf4c600d9422d2ad7b84f1bcc70c966
+[got JSSA to the point where it compiles, but doesn't even remotely work
+adam@megacz.com**20050701031149] 
+hash: 0000019752-fa3d90af3bf0bb008c83cfd126f9fd34993ac4a889e769240524ac357429d06a
+[major updates to JSSA
+adam@megacz.com**20050701055808] 
+hash: 0000000643-2cf93870d364d89e64d8dc55a77a44eacb3c9aee43ca0ed1781d7efd97bada9d
+[massive refactoring of method-body-printing; see Type.Class.Method.Body
+adam@megacz.com**20050701064710] 
+hash: 0000005790-3c342114dad29e3dc509de7c106b196229b889c7f7ec904e5a0937d34b3813ab
+[ok, really added JSSA
+adam@megacz.com**20050702015449] 
+hash: 0000027443-8c435bd1c7e111a94c3d5fc8377193225773a7854581020a3b1e083bbe066cb9
+[made ClassFile(DataInput) public
+adam@megacz.com**20050702081743] 
+hash: 0000000390-ed4894a7faa713c7eda66d7bf310d9de458f0d35285f4b6bad75bc932c9dbfea
+[fix the field type descriptor bug (again :) )
+brian@brianweb.net**20050702215618] 
+hash: 0000000265-35a091608151b75fdd5f8208fe1e6aea0edeeba2ecec4aaa1fb3005668e20dda
+[remove no-longer-necessary equals() and hashCode() methods
+adam@megacz.com**20050703002944] 
+hash: 0000000798-6120b3aca8cf4be3f3b0dfd6c7d48e2ac59f0cf2a49ba8cd894eb360ce7106f9
+[added convenience methods to HasFlags
+adam@megacz.com**20050703024240] 
+hash: 0000001089-6236939b925f24e84f70f0e4faf490fb02cbd705e846a661998fc16de77d5d65
+[added Type.Field.Body and Type.Class.Body
+adam@megacz.com**20050703024323] 
+hash: 0000003076-e01b00b51d7c0e2f063bb1c3bba31d42b87825213f761a64ef63d3f92a251563
+[Class.method(sig) => Class.method(name,type)
+brian@brianweb.net**20050702224819] 
+hash: 0000000982-8ebc5e8e1dae28e902d785e0ea824e665c025dcf723ba5a9c0c86444c989aa84
+[add VALID_FIELD_FLAGS (like VALID_METHOD_FLAGS)
+brian@brianweb.net**20050702225742] 
+hash: 0000000602-775dc538c5a3759d02e0e4d2422378801cc0eaa742a2ff314ff4ba35f2cc6639
+[move field type descriptor parsing to Type.java, like method()
+brian@brianweb.net**20050702230111] 
+hash: 0000000811-7f35c131d0d535d18c7ba3544eb0253c6b71c822903f7510e95927532e400be2
+[Member.getDescriptor => Member.getTypeDescriptor, a method descriptor is different from its type descriptor
+brian@brianweb.net**20050702230601] 
+hash: 0000002717-1b0f383e59311ebd17d0f1e9cc40812b0ff8233eb78325ce0f46d733dd70cfeb
+[added Type.Primitive, generate toString() output on demand
+brian@brianweb.net**20050702233446] 
+hash: 0000006906-3df8c2ef0d7d0ac6c061810c96f1716627eae17381f8e26d236170da1804e3df
+[make Type abstract
+brian@brianweb.net**20050703003844] 
+hash: 0000000189-73540b335bcfc567c572a9d0aecea4aa83d20cdce84e4e187b1c8a367e421fa6
+[add JSSA.Constant(int) to get JSSA to compile
+brian@brianweb.net**20050703003952] 
+hash: 0000000187-703605cdbc9f6e33bb017c11fa7b9939a42704cc4154907b4a4e84d5e8719c50
+[repair breakage
+adam@megacz.com**20050703030837] 
+hash: 0000004694-27a14df60a02b7ed8a4780dd22d41e0ca9777f191d2073c615363fb7d0e35a79
+[replace Type.instance() => Type.fromDescriptor, added useful comment
+adam@megacz.com**20050703031351] 
+hash: 0000001922-d7a2c788732ff2bd76d576bccf6d56ec5273fb59430359519f53715f8d9dc827
+[refactored functionality out of FieldGen into Type.Class.Field
+adam@megacz.com**20050703032659] 
+hash: 0000004110-33669c86dbf1a442f0d95d2fc529109cde94648c18402f21b47025fea2c013ef
+[refactored tons of functionality into Class.Body and HasAttributes
+adam@megacz.com**20050703035603] 
+hash: 0000007990-72b74613d1034d72fed35eaae77b94fe58ac139ee8aa8e7d41a6a82c8724b3d5
+[more accessor methods for ClassFile and Type.Class
+adam@megacz.com**20050703045236] 
+hash: 0000002423-0ddf1a521569c90b476e4b9900e85ce1fc0b5f3053627c5339e338a8f23c4c24
+[fixed HIDEOUS bug in ConstantPool -- was circumventing Type-instance caching (evil!!!!)
+adam@megacz.com**20050703045403] 
+hash: 0000000518-c655c33d56fbf35506151be9955479ac50ca4d50522576f3d6ed3242b7611a3a
+[added Type.Class.getBody
+adam@megacz.com**20050703045433] 
+hash: 0000000196-cb0c3309ba9df22ae18df1396347edbeb0f07e95cd34f6314dfec5abe378454c
+[added preliminary version of classgen-ified ArenaJ
+adam@megacz.com**20050703045502] 
+hash: 0000026624-5a6f60bc9f4f778dd8ef0c4406d9df0216458473eaeaa21408ca5a8921410e28
+[last ditch efford to separate names and type descriptors
+brian@brianweb.net**20050703192751] 
+hash: 0000001576-c2bc836a4dc8aada1db21be16a82d57ca4296e5bfc060760aa24ba20da137412
+[ditch debugToString
+brian@brianweb.net**20050703194016] 
+hash: 0000007629-4a26361a14a4776891f7a2a4307de59ed1bba42acc396cf88a20332b4fa20b11
+[start to fix the interface problem
+brian@brianweb.net**20050703195706] 
+hash: 0000000425-79802650e0424b1335012c4aa6c57c6ece6e0db910d810db02bcfd40f5f8c34f
+[make test for JSSA
+brian@brianweb.net**20050703200754] 
+hash: 0000000198-190c57342d09ad6e5806dd31c66d22671111210c94a1ce656893ed3ebe27c839
+[fix array instructions in jssa
+brian@brianweb.net**20050703203344] 
+hash: 0000003436-0082d537d9cf499d91b4ee4a22fbacecd6ebc6386638b779e93d116484a50f3b
+[get maxStack/maxLocals from MethodGen
+brian@brianweb.net**20050703203457] 
+hash: 0000000582-645cfeb05a44815d1d05d74dd14b30e2c9b7a40da5a5adfeb4cb15eb526894f7
+[added VOID_EXPR
+brian@brianweb.net**20050703203515] 
+hash: 0000000583-46adcf65ce693d74921aa4054a07bdc663676e0e6921fa120bfb4cafa852783a
+[some more sanity checks on expression types
+brian@brianweb.net**20050703203535] 
+hash: 0000001594-57e5475ba58c724b798baea46c5894d4798cef4b4967e3f0d15ae4102837971c
+[stack overflow checking
+brian@brianweb.net**20050703203555] 
+hash: 0000000513-187e4c67eb0d4565f45fffe753eed30dda8f04dcb29c490d423f500772e9b1a7
+[cleanup math ops
+brian@brianweb.net**20050703211952] 
+hash: 0000006883-0324d6ca15e14eee3dbd9d5a9cd701e87b817e6a1649510e760a738d313e4d8b
+[better stack overflow checking
+brian@brianweb.net**20050703212054] 
+hash: 0000000522-300c3aa4789c8452c453e4bb946f8c106fe3b1fcbff4e01f7198614893ff1a12
+[better error reporting (pc and method name)
+brian@brianweb.net**20050703212123] 
+hash: 0000000687-629e5ba6cdb7e471a3e86f1b70cbb45b07a9aeb008c748877c9860356805e589
+[add "this" for first arg
+brian@brianweb.net**20050703212140] 
+hash: 0000000485-5c823867228c2e8d180ba398db11bf5866b0a5cddab948ad2f7cdd0eef226bea
+[fix Constant() constructor
+brian@brianweb.net**20050703212154] 
+hash: 0000000375-943cf6a0cea52e3eac9e1de291bdcfdaaafbdd6291a61ad69fd0151d8e49ba25
+[do not push void method results
+brian@brianweb.net**20050703212210] 
+hash: 0000001142-9e593c7b8a24dd5fcceb9eb52e9af73e13040f381d0cd3ae68fd155231450d00
+[display constants correctly in debug output
+brian@brianweb.net**20050703214606] 
+hash: 0000000276-fa2865ba84c027dfaae820406f07fd0287a0a1b12ebf4bde84f87cc45d93a55b
+[cleanup POP/DUP
+brian@brianweb.net**20050703214627] 
+hash: 0000000664-5ed653b6a9f35912f64c651da8514faf6e974280e63b2c4edb68c81a014c75cf
+[instance methods sort of work
+brian@brianweb.net**20050703215935] 
+hash: 0000001242-11e7668b08541bab0cb1b814e17ce62f75c99dad15d1f059396fe443812f0c2e
+[added Context.java
+adam@megacz.com**20050703215719] 
+hash: 0000000788-f346335b0ce67fdea79265f1fb0efa7e8ef757cba7948191d158ef6325567a71
+[void methods are ops, others are not, this still isn't totally correct
+brian@brianweb.net**20050703222615] 
+hash: 0000000436-e63601802239d28b26a061fe13903d3a7bc1acc2c7d147e654e68f1dd5610891
+[JSSA.Seq to for evaluation of an expr
+brian@brianweb.net**20050704000941] 
+hash: 0000002863-1cf9738b3bdba55037852299039fda36ce7f3ca4a6d7d06c8871848eece7d838
+[implement bipush/sipush
+brian@brianweb.net**20050704001059] 
+hash: 0000000411-944cdfbccacc5da67ea87184051c1a2358604976a803cc35a30bad2fb68dff03
+[do not generate ops for load insns
+brian@brianweb.net**20050704001137] 
+hash: 0000001593-b549b00a15c964ef09d59afe2e94124aed34c1b11c1296eeae703e7fe312d02d
+[create binding for all expressions already evaluated
+brian@brianweb.net**20050704001212] 
+hash: 0000005316-89909e020ecca93edf633dd5feb3da327ac802def087f40c4874d5a2dd3253ce
+[fix totally broken jssa array handling
+brian@brianweb.net**20050704002920] 
+hash: 0000001867-b862f1f3bdbbdbf81c55ea117295904a9a01a1b9b04c658ca701339b02770c3f
+[use = for bindings, := for assignment
+brian@brianweb.net**20050704004058] 
+hash: 0000000231-4eafc29bd282cdfc0e2a4b7624f2b28d8353671f69beabda42ef27008a00da7b
+[use push more
+brian@brianweb.net**20050704010945] 
+hash: 0000000589-ccf1edaeea750c0715656beb469546ec68cb347aa06e286d77b575e1b9860ca6
+[beginnings of type unification code
+brian@brianweb.net**20050704011004] 
+hash: 0000001361-2d6f83458dfbb0260c94464fc36c8a598cf3fa2651d4fc13fb2abb1555424929
+[more poop make test stuff
+brian@brianweb.net**20050704011035] 
+hash: 0000000198-3917a6638cf2605f244a2b45d299f355b656e8afbb604afa0ffdc3523d249df7
+[more type unification
+brian@brianweb.net**20050704013638] 
+hash: 0000000218-a10842c6a6f7769440344f66595dab92a961687a02395ffc43ac8a365e19377e
+[remove period between ret type and method name
+brian@brianweb.net**20050704013656] 
+hash: 0000000298-a723030584473d6fda4f47448cab23332eb92373405240bfa9799a1b32c34669
+[build jdk1.3 classes
+Brian Alliet <brian@brianweb.net>**20051214103021] 
+hash: 0000000148-e9901a74d5c8ffd69e6f1ff7bcc630fd62a82310b765b5b594de6e80bb28a06f
+[temporarily remove some of the .Body references
+Brian Alliet <brian@brianweb.net>**20051215000010] 
+hash: 0000001321-f80484e78e5720ea30bff69c6bfd44f1056631c01ddcd8fba4d3156a0ec88993
+[add equals/hashCode methods for Type.Class.Member (these seem to have been removed at least once before, they NEED to be there for the constant pool hashtable)
+Brian Alliet <brian@brianweb.net>**20060213045348] 
+hash: 0000001729-8755e14e6163859b4cf3be3ba09b2b2bc65c462365e2e83e468e3bc68782d3ba

@@ -1,0 +1,1 @@
+java org.ibex.nestedvm.Compiler -outfile Test2.class Test test.mips

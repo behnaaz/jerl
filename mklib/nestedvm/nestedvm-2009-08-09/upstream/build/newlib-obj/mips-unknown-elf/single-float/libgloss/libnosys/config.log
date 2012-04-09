@@ -1,0 +1,19 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:588: checking host system type
+configure:609: checking target system type
+configure:627: checking build system type
+configure:681: checking for a BSD compatible install
+configure:811: checking for .previous assembler directive
+configure:819: mips-unknown-elf-gcc -B/home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-obj/mips-unknown-elf/single-float/newlib/ -isystem /home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-obj/mips-unknown-elf/single-float/newlib/targ-include -isystem /home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-1.11.0/newlib/libc/include  -msingle-float -c -O2 -g -O2 conftest.s 1>&5
+configure:831: checking for .popsection assembler directive
+configure:839: mips-unknown-elf-gcc -B/home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-obj/mips-unknown-elf/single-float/newlib/ -isystem /home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-obj/mips-unknown-elf/single-float/newlib/targ-include -isystem /home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-1.11.0/newlib/libc/include  -msingle-float -c -O2 -g -O2 conftest.s 1>&5
+configure:851: checking for section attributes
+configure:859: mips-unknown-elf-gcc -B/home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-obj/mips-unknown-elf/single-float/newlib/ -isystem /home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-obj/mips-unknown-elf/single-float/newlib/targ-include -isystem /home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-1.11.0/newlib/libc/include  -msingle-float -c -O2 -g -O2 conftest.c 1>&5
+configure:873: checking for function prefix
+configure:880: mips-unknown-elf-gcc -B/home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-obj/mips-unknown-elf/single-float/newlib/ -isystem /home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-obj/mips-unknown-elf/single-float/newlib/targ-include -isystem /home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-1.11.0/newlib/libc/include  -msingle-float -S conftest.c -o - | fgrep $foo > /dev/null
+configure:905: checking for gcc
+configure:984: checking whether we are using GNU C
+configure:1008: checking whether mips-unknown-elf-gcc -B/home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-obj/mips-unknown-elf/single-float/newlib/ -isystem /home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-obj/mips-unknown-elf/single-float/newlib/targ-include -isystem /home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-1.11.0/newlib/libc/include  -msingle-float accepts -g
+configure:1044: checking for ranlib

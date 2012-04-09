@@ -1,0 +1,24 @@
+# This file is a shell script that caches the results of configure
+# tests run on this system so they can be shared between configure
+# scripts and configure runs.  It is not useful on other systems.
+# If it contains results you don't want to keep, you may remove or edit it.
+#
+# By default, configure uses ./config.cache as the cache file,
+# creating it if it does not exist already.  You can give configure
+# the --cache-file=FILE option to use a different cache file; that is
+# what configure does when it calls configure scripts in
+# subdirectories, so they share the cache.
+# Giving --cache-file=/dev/null disables caching, for debugging configure.
+# config.status only pays attention to the cache file if you give it the
+# --recheck option to rerun configure.
+#
+ac_cv_cygwin=${ac_cv_cygwin='no'}
+ac_cv_mingw32=${ac_cv_mingw32='no'}
+ac_cv_path_install=${ac_cv_path_install='/usr/bin/install -c'}
+ac_cv_prog_AR=${ac_cv_prog_AR='mips-unknown-elf-ar'}
+ac_cv_prog_AS=${ac_cv_prog_AS='mips-unknown-elf-as'}
+ac_cv_prog_CC=${ac_cv_prog_CC='mips-unknown-elf-gcc -B/home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-obj/mips-unknown-elf/single-float/newlib/ -isystem /home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-obj/mips-unknown-elf/single-float/newlib/targ-include -isystem /home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-1.11.0/newlib/libc/include  -msingle-float'}
+ac_cv_prog_RANLIB=${ac_cv_prog_RANLIB='mips-unknown-elf-ranlib'}
+ac_cv_prog_cc_g=${ac_cv_prog_cc_g='yes'}
+ac_cv_prog_gcc=${ac_cv_prog_gcc='yes'}
+ac_cv_prog_make_make_set=${ac_cv_prog_make_make_set='yes'}

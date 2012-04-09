@@ -1,0 +1,24 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:612: checking for a BSD compatible install
+configure:665: checking whether build environment is sane
+configure:722: checking whether make sets ${MAKE}
+configure:755: checking for Cygwin environment
+configure:788: checking for mingw32 environment
+configure:947: checking host system type
+configure:968: checking target system type
+configure:986: checking build system type
+configure:1029: checking for working aclocal
+configure:1042: checking for working autoconf
+configure:1055: checking for working automake
+configure:1068: checking for working autoheader
+configure:1081: checking for working makeinfo
+configure:1106: checking for gcc
+configure:1185: checking whether we are using GNU C
+configure:1209: checking whether mips-unknown-elf-gcc -B/home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-obj/mips-unknown-elf/single-float/newlib/ -isystem /home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-obj/mips-unknown-elf/single-float/newlib/targ-include -isystem /home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/newlib-1.11.0/newlib/libc/include  -msingle-float accepts -g
+configure:1240: checking for -as
+configure:1272: checking for -ar
+configure:1304: checking for -ranlib
+configure:1381: checking for a BSD compatible install
+configure:1435: checking whether to enable maintainer-specific portions of Makefiles

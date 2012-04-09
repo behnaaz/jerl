@@ -1,0 +1,43 @@
+cc -c -o generate_uudmap.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  generate_uudmap.c
+cc -o generate_uudmap  generate_uudmap.o -lm
+./generate_uudmap uudmap.h bitcount.h
+cc -c -o uav.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  av.c
+cc -c -o udeb.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  deb.c
+cc -c -o udoio.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  doio.c
+cc -c -o udoop.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  doop.c
+cc -c -o udump.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  dump.c
+cc -c -o uglobals.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  globals.c
+cc -c -o ugv.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  gv.c
+cc -c -o uhv.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  hv.c
+cc -c -o umro.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  mro.c
+cc -c -o umg.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  mg.c
+cc -c -o uperlmain.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  miniperlmain.c
+cc -c -o uop.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  -DPERL_EXTERNAL_GLOB op.c
+cc -c -o ureentr.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  reentr.c
+cc -c -o upad.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  pad.c
+cc -c -o uperl.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  perl.c
+cc -c -o uperlio.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  perlio.c
+perly.c is uptodate
+cc -c -o uperly.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  perly.c
+cc -c -o upp.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  pp.c
+cc -c -o upp_ctl.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  pp_ctl.c
+cc -c -o upp_hot.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  pp_hot.c
+cc -c -o upp_sys.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  pp_sys.c
+cc -c -o upp_pack.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  pp_pack.c
+cc -c -o upp_sort.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  pp_sort.c
+cc -c -o uregcomp.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  regcomp.c
+cc -c -o uregexec.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  regexec.c
+cc -c -o urun.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  run.c
+cc -c -o uscope.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  scope.c
+cc -c -o usv.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  sv.c
+cc -c -o utaint.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  taint.c
+cc -c -o utoke.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  toke.c
+cc -c -o unumeric.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  numeric.c
+cc -c -o ulocale.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  locale.c
+cc -c -o umathoms.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  mathoms.c
+cc -c -o uuniversal.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  universal.c
+cc -c -o uutf8.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  utf8.c
+cc -c -o uutil.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  util.c
+cc -c -o uperlapi.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  perlapi.c
+cc -c -o ukeywords.o -DPERL_CORE -DPERL_MICRO -DSTANDARD_C -DPERL_USE_SAFE_PUTENV -DNO_MATHOMS  keywords.c
+cc -o microperl uav.o udeb.o udoio.o udoop.o udump.o uglobals.o ugv.o uhv.o umro.o umg.o uperlmain.o uop.o ureentr.o upad.o uperl.o uperlio.o uperly.o upp.o upp_ctl.o upp_hot.o upp_sys.o upp_pack.o upp_sort.o uregcomp.o uregexec.o urun.o uscope.o usv.o utaint.o utoke.o unumeric.o ulocale.o umathoms.o uuniversal.o uutf8.o uutil.o uperlapi.o ukeywords.o  -lm

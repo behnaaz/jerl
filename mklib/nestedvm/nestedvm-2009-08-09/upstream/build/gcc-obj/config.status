@@ -1,0 +1,5 @@
+#!/bin/sh
+# This file was generated automatically by configure.  Do not edit.
+# This directory was configured as follows:
+../gcc-3.3.6/configure --with-gcc-version-trigger=/home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/build/gcc-3.3.6/gcc/version.c --host=i686-pc-linux-gnu --prefix=/home/forge/workspaces/jerl/contrib/2/nestedvm-2009-08-09/upstream/install --target=mips-unknown-elf --disable-threads --with-gnu-ld --with-gnu-as --with-newlib=yes --enable-sjlj-exceptions --enable-languages=c --norecursion 
+# 

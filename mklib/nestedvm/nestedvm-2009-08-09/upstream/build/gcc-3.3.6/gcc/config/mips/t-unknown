@@ -1,0 +1,3 @@
+MULTILIB_OPTIONS= msingle-float
+MULTILIB_DIRNAMES = single-float
+MULTILIB_MATCHES = 
