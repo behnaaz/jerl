@@ -1,3 +1,5 @@
+print "test.pl ...\n\n";
+print "Perl Version: $PERL_VERSION :: $^V \n";
 print "hello jerl\n";
 @lameArray = ("derp","foo","blurp");
 print "@lameArray\n";
