@@ -1,0 +1,26 @@
+#!/bin/sh
+case "$cc" in        
+'') ;;
+*)  $rm -f try try.*              
+    $cat >try.c <<EOM
+int main(int argc, char *argv[]) {
+  return 0;
+}
+EOM
+    if $cc -o try $ccflags $ldflags try.c; then
+       :
+    else
+        if $test X"$despair" = Xyes; then
+           echo "Uh-oh, the C compiler '$cc' doesn't seem to be working." >&4
+        fi
+        $cat >&4 <<EOM         
+You need to find a working C compiler.
+Either (purchase and) install the C compiler supplied by your OS vendor,
+or for a free C compiler try http://gcc.gnu.org/
+I cannot continue any further, aborting.
+EOM
+        exit 1
+    fi
+    $rm -f try try.*
+    ;;
+esac

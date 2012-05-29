@@ -1,0 +1,2 @@
+utf8.c.jerChanges - utf8.c made a call to strTol when it was undefined
+util2.c.jerlChanges - HAS_DUP2 had issues during compile

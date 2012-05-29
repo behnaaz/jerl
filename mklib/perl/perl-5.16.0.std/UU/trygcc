@@ -1,0 +1,67 @@
+#!/bin/sh
+case "$cc" in
+'') ;;
+*)  $rm -f try try.*
+    $cat >try.c <<EOM
+int main(int argc, char *argv[]) {
+  return 0;
+}
+EOM
+    if $cc -o try $ccflags $ldflags try.c; then
+       :
+    else
+        echo "Uh-oh, the C compiler '$cc' doesn't seem to be working." >&4
+        despair=yes
+        trygcc=yes
+        case "$cc" in
+        *gcc*) trygcc=no ;;
+        esac
+	# Skip this test because it gives a false match on output like:
+	#    ./trygcc: line 23: cc: command not found
+        # case "`$cc -v -c try.c 2>&1`" in
+        # *gcc*) trygcc=no ;;
+        # esac
+        if $test X"$trygcc" = Xyes; then
+            if gcc -o try -c try.c; then
+                echo " "
+                echo "You seem to have a working gcc, though." >&4
+		# Switching compilers may undo the work of hints files.
+		# The most common problem is -D_REENTRANT for threads.
+		# This heuristic catches that case, but gets false positives
+		# if -Dusethreads was not actually specified.  Better to
+		# bail out here with a useful message than fail 
+		# mysteriously later. Should we perhaps just try to
+		# re-invoke Configure -Dcc=gcc config_args ?
+		if $test -f usethreads.cbu; then
+			$cat >&4 <<EOM 
+
+*** However, any setting of the C compiler flags (e.g. for thread support)
+*** will be lost.  It may be necessary for you to restart Configure and
+*** add -Dcc=gcc to your Configure command line.
+
+EOM
+			rp="Would you like to go ahead and try gcc anyway?"
+			dflt=n
+		else
+			rp="Would you like to use it?"
+			dflt=y
+		fi
+                if $test -f myread; then
+                    . ./myread
+                else
+                    if $test -f UU/myread; then
+                        . ./UU/myread
+                    else
+                        echo "Cannot find myread, sorry.  Aborting." >&2
+                        exit 1
+                    fi
+                fi  
+                case "$ans" in
+                [yY]*) cc=gcc; ccname=gcc; ccflags=''; despair=no;
+                esac
+            fi
+        fi
+    fi
+    $rm -f try try.*
+    ;;
+esac

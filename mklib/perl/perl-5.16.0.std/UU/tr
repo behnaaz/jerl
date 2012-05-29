@@ -1,0 +1,6 @@
+#!/bin/sh
+case "$1$2" in
+'[A-Z][a-z]') exec /usr/bin/tr '[:upper:]' '[:lower:]';;
+'[a-z][A-Z]') exec /usr/bin/tr '[:lower:]' '[:upper:]';;
+esac
+exec /usr/bin/tr "$@"
