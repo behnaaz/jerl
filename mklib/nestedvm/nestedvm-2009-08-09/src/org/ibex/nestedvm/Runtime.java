@@ -725,6 +725,19 @@ public abstract class Runtime implements UsermodeConstants,Registers,Cloneable {
         return i;
     }
 
+ 
+    /** returns FD for file descriptor <i>fdn</i> */
+    public FD getFD(int fdn) {
+        if(fdn < 0 || fdn >= OPEN_MAX) { return null; }
+        return fds[fdn];
+    }
+    /** returns FD for stdout */
+    public FD getSTDOutputFD() {
+	return this.getFD(UsermodeConstants.STDOUT_FILENO);
+    }
+
+
+
     public static final int RD_ONLY = 0;
     public static final int WR_ONLY = 1;
     public static final int RDWR = 2;
@@ -1301,11 +1314,14 @@ public abstract class Runtime implements UsermodeConstants,Registers,Cloneable {
     
     public static class InputOutputStreamFD extends FD {
         private final InputStream is;
-        private final OutputStream os;
+	private final OutputStream os;
+	//store os via string builder
+        private StringBuilder stringOut = new StringBuilder();
         
         public InputOutputStreamFD(InputStream is) { this(is,null); }
         public InputOutputStreamFD(OutputStream os) { this(null,os); }
         public InputOutputStreamFD(InputStream is, OutputStream os) {
+ 
             this.is = is;
             this.os = os;
             if(is == null && os == null) throw new IllegalArgumentException("at least one stream must be supplied");
@@ -1337,11 +1353,27 @@ public abstract class Runtime implements UsermodeConstants,Registers,Cloneable {
             if(os == null) return super.write(a,off,length);
             try {
                 os.write(a,off,length);
+ 
+                //update output buffer
+                String byteString = new String(a);
+                this.stringOut.append( byteString );
+
                 return length;
             } catch(IOException e) {
                 throw new ErrnoException(EIO);
             }
         }
+
+        // return the StringBuilder as a string.
+        // decided not to override toString
+        public String getOutString() {
+            return this.stringOut.toString();
+	}
+
+        // reassign the output StringBuilder to use an empty string
+        public void clearOutString() {
+           this.stringOut = new StringBuilder("");
+	}
         
         public FStat _fstat() { return new SocketFStat(); }
     }
