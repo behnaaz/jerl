@@ -25,3 +25,15 @@ Run the following from the command prompt
 
       B.1) javac -classpath ../jars/jerl.jar testJerlVMCall.java; 
       B.2) java -classpath ../jars/jerl.jar:. testJerlVMCall
+
+C.) Use the JVM wrapper in Eclipse
+=============================================================
+      
+      C.1) Open up the project in eclipse
+      C.2) Add the jars directory to the projects class path
+      C.3) Compile/Run/Review src/exampleUsage.java
+
+
+
+
+
