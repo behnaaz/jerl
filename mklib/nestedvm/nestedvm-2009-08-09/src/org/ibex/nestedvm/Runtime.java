@@ -1350,12 +1350,16 @@ public abstract class Runtime implements UsermodeConstants,Registers,Cloneable {
         }    
         
         public int write(byte[] a, int off, int length) throws ErrnoException {
-            if(os == null) return super.write(a,off,length);
+	    if(os == null) {
+                String empty = new String("");
+                this.stringOut.append( empty );
+                return super.write(a,off,length);
+            }
             try {
                 os.write(a,off,length);
- 
-                //update output buffer
-                String byteString = new String(a);
+  
+                //update output buffer with substring
+		String byteString = new String(a).substring(off, off+length);
                 this.stringOut.append( byteString );
 
                 return length;
