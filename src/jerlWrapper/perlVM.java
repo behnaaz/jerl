@@ -13,6 +13,14 @@ public class perlVM  extends vmActions {
 	protected String perlProggie = defaultProgram;
 	private String perlOutput = "";
 	
+	public String getDefaultProgram() {
+		return defaultProgram;
+	}
+	
+	public String getDefaultOutput() {
+		return expectedDefaultProgramOutput;
+	}
+
 	public String getOutput() {
 		return this.perlOutput;
 	}
