@@ -9,7 +9,7 @@ import junit.framework.TestCase;
  * @author forge
  *
  */
-public class TestDefaultPerlProggie extends TestCase {
+public class perlVMTest extends TestCase {
 	
 	/* (non-Javadoc)
 	 * @see junit.framework.TestCase#setUp()
