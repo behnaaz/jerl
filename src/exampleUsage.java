@@ -4,6 +4,13 @@ import org.ibex.nestedvm.Runtime.*;
 import org.ibex.nestedvm.util.*;
 import java.io.*;
 
+/*   exampleUsage
+ *
+ *   This example details how to get the output from a runtime instance.  
+ *   It is easier to use the perlVM wrapper instead of doing this every time you run.
+ *   Nevertheless, if you want to do this yourself it details a few ways it may be done
+ */
+
 @SuppressWarnings("unused")
 public class exampleUsage {
 
@@ -15,12 +22,10 @@ public class exampleUsage {
     	rt3 = (Runtime) Class.forName("jerl").newInstance();
 
     	// Get the IO from the JERL Instance
-    	Runtime.InputOutputStreamFD b = (Runtime.InputOutputStreamFD) rt3.getFD(UsermodeConstants.STDOUT_FILENO);
-    	Runtime.InputOutputStreamFD d = (Runtime.InputOutputStreamFD) rt3.getSTDOutputFD();
-
-
+    	Runtime.InputOutputStreamFD ft = (Runtime.InputOutputStreamFD) rt3.getFD(UsermodeConstants.STDOUT_FILENO);
+    	Runtime.InputOutputStreamFD std = (Runtime.InputOutputStreamFD) rt3.getSTDOutputFD();
     	
-    	System.out.println("== Start of JERL Test ==");
+    	System.out.println("== Example of how to use Jerl without using the perlVM wrapper ==");
     	System.out.println("==== print hi from perl ====");
     	rt1.start(new String[]{"jerl","-e {print \"hi\\n\"}"});
     	rt1.execute();
@@ -32,8 +37,8 @@ public class exampleUsage {
     	System.out.println("==== print perl version ====");
     	rt3.start(new String[]{"jerl","-e {print qq(PerlVersion: $] \\n)}"});
     	rt3.execute();
-    	System.out.println("FD:string-->"+b.getOutString()+"<--rt3");
-    	System.out.println("STDOut:string-->"+d.getOutString()+"<--rt3");
+    	System.out.println("FD:string-->"+fd.getOutString()+"<--rt3");
+    	System.out.println("STDOut:string-->"+std.getOutString()+"<--rt3");
 
     	
     }
