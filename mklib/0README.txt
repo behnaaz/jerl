@@ -24,11 +24,14 @@ BUILD COMPONENTS:
                   perl using configure and makefile without any of the nestedvm overrides, 
                   then when uudmap.h and bitcount.h is generated go back to building the
                   environment using nestedvm).
+		  - For a better way, check with README.micro in the perl directory
+		  
           2.) review and run jerl.Config to use nestedVM build environment
 
 
 Troubleshooting:
-    See 1.c) for problems with generate_uudmap
+    See 1.c) for problems with generate_uudmap, also read README.micro in the perl directory
+        
 
 
 
