@@ -1,0 +1,7 @@
+: Configure command line arguments.
+config_arg0='./Configure'
+config_args='-Dcc=/home/forge/workspaces/jerl/contrib/nestedvm/nestedvm-2009-08-09/upstream/install/bin/mips-unknown-elf-gcc -Dprefix=/usr/local/jerl -DLD=mips-unknown-elf-gcc'
+config_argc=3
+config_arg1='-Dcc=/home/forge/workspaces/jerl/contrib/nestedvm/nestedvm-2009-08-09/upstream/install/bin/mips-unknown-elf-gcc'
+config_arg2='-Dprefix=/usr/local/jerl'
+config_arg3='-DLD=mips-unknown-elf-gcc'
