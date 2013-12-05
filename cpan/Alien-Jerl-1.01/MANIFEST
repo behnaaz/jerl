@@ -1,0 +1,11 @@
+Changes
+lib/Alien/Jerl.pm
+lib/Alien/jerl.jar
+lib/Alien/jerl_perlVM_r1.jar
+Makefile.PL
+MANIFEST			This list of files
+MANIFEST.SKIP
+README
+t/01_hasJVM.t
+t/02_versionTest.t
+META.yml                                Module meta-data (added by MakeMaker)
