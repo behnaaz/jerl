@@ -55,11 +55,11 @@ DIRFILESEP = /
 DFSEP = $(DIRFILESEP)
 NAME = Alien::Jerl
 NAME_SYM = Alien_Jerl
-VERSION = 1.0
+VERSION = 1.02
 VERSION_MACRO = VERSION
-VERSION_SYM = 1_0
+VERSION_SYM = 1_02
 DEFINE_VERSION = -D$(VERSION_MACRO)=\"$(VERSION)\"
-XS_VERSION = 1.0
+XS_VERSION = 1.02
 XS_VERSION_MACRO = XS_VERSION
 XS_DEFINE_VERSION = -D$(XS_VERSION_MACRO)=\"$(XS_VERSION)\"
 INST_ARCHLIB = blib/arch
@@ -181,23 +181,14 @@ PERL_ARCHIVE       =
 PERL_ARCHIVE_AFTER = 
 
 
-TO_INST_PM = lib/._Alien \
-	lib/Alien/._jerl.jar \
-	lib/Alien/._jerl_perlVM_r1.jar \
-	lib/Alien/Jerl.pm \
+TO_INST_PM = lib/Alien/Jerl.pm \
 	lib/Alien/jerl.jar \
 	lib/Alien/jerl_perlVM_r1.jar
 
-PM_TO_BLIB = lib/Alien/._jerl_perlVM_r1.jar \
-	blib/lib/Alien/._jerl_perlVM_r1.jar \
-	lib/Alien/._jerl.jar \
-	blib/lib/Alien/._jerl.jar \
-	lib/Alien/jerl.jar \
+PM_TO_BLIB = lib/Alien/jerl.jar \
 	blib/lib/Alien/jerl.jar \
 	lib/Alien/Jerl.pm \
 	blib/lib/Alien/Jerl.pm \
-	lib/._Alien \
-	blib/lib/._Alien \
 	lib/Alien/jerl_perlVM_r1.jar \
 	blib/lib/Alien/jerl_perlVM_r1.jar
 
@@ -268,7 +259,7 @@ RCS_LABEL = rcs -Nv$(VERSION_SYM): -q
 DIST_CP = best
 DIST_DEFAULT = tardist
 DISTNAME = Alien-Jerl
-DISTVNAME = Alien-Jerl-1.0
+DISTVNAME = Alien-Jerl-1.02
 
 
 # --- MakeMaker macro section:
@@ -489,7 +480,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) Generating META.yml
 	$(NOECHO) $(ECHO) '--- #YAML:1.0' > META_new.yml
 	$(NOECHO) $(ECHO) 'name:               Alien-Jerl' >> META_new.yml
-	$(NOECHO) $(ECHO) 'version:            1.0' >> META_new.yml
+	$(NOECHO) $(ECHO) 'version:            1.02' >> META_new.yml
 	$(NOECHO) $(ECHO) 'abstract:           mJERL is a mips compiled micro perl that runs in a JVM' >> META_new.yml
 	$(NOECHO) $(ECHO) 'author:' >> META_new.yml
 	$(NOECHO) $(ECHO) '    - michaelt shomsky <17michaelt@gmail.com>' >> META_new.yml
@@ -776,7 +767,7 @@ testdb_static :: testdb_dynamic
 # --- MakeMaker ppd section:
 # Creates a PPD (Perl Package Description) for a binary distribution.
 ppd :
-	$(NOECHO) $(ECHO) '<SOFTPKG NAME="$(DISTNAME)" VERSION="1.0">' > $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '<SOFTPKG NAME="$(DISTNAME)" VERSION="1.02">' > $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <ABSTRACT>mJERL is a mips compiled micro perl that runs in a JVM</ABSTRACT>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <AUTHOR>michaelt shomsky &lt;17michaelt@gmail.com&gt;</AUTHOR>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <IMPLEMENTATION>' >> $(DISTNAME).ppd
@@ -791,11 +782,8 @@ ppd :
 
 pm_to_blib : $(FIRST_MAKEFILE) $(TO_INST_PM)
 	$(NOECHO) $(ABSPERLRUN) -MExtUtils::Install -e 'pm_to_blib({@ARGV}, '\''$(INST_LIB)/auto'\'', q[$(PM_FILTER)], '\''$(PERM_DIR)'\'')' -- \
-	  lib/Alien/._jerl_perlVM_r1.jar blib/lib/Alien/._jerl_perlVM_r1.jar \
-	  lib/Alien/._jerl.jar blib/lib/Alien/._jerl.jar \
 	  lib/Alien/jerl.jar blib/lib/Alien/jerl.jar \
 	  lib/Alien/Jerl.pm blib/lib/Alien/Jerl.pm \
-	  lib/._Alien blib/lib/._Alien \
 	  lib/Alien/jerl_perlVM_r1.jar blib/lib/Alien/jerl_perlVM_r1.jar 
 	$(NOECHO) $(TOUCH) pm_to_blib
 
