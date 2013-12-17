@@ -2,12 +2,24 @@ use Test::More qw[no_plan];
 use strict;
 use warnings;
 
+
+my $missingMessage = "Missing JVM, ergo you cannot test JERL (Download a JVM and make it available)";
+
+my $diagMessage = "";
+
 my $javaVersion = `java -version 2>&1` || 'missing';
 chomp($javaVersion);
 
+# Respond to specific version related issues here
 
-my $missingMessage = "Missing JVM, ergo you cannot test JERL (Download a JVM and make it available)";
-my $diagMessage = "";
+#
+# MSWIN issue : an error string is returned instead of false/empty
+# 
+if ( $javaVersion =~ m/is not recognized as an/gs) {
+  $javaVersion = 'missing';
+  $diagMessage .=  "Found error similar to the following: ( 'java' is not recognized as an internal or external command ) ...  stopping tests. ";
+}
+
 
 SKIP: { 
       
