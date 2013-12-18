@@ -16,13 +16,13 @@ my $noJVM = 'No JVM found, please install java and have it available for executi
 # 2.) Run JERL if possible and get version and display
 #
 RUNJERL: {
-if ($javaVersion eq 'missing') {
+if ($javaVersion eq 'missing' or $javaVersion =~ m/error/gis) {
    plan skip_all => $noJVM;
 }
 
 skip $noJVM, 1 unless ($javaVersion ne 'missing');
 
-cmp_ok ($version,          'ne', jerlMissingJVMMessage(), 'JVM is not Missing');
+cmp_ok ($version, 'ne', jerlMissingJVMMessage(), 'JVM is not Missing');
 }
 
 #
