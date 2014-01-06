@@ -55,11 +55,11 @@ DIRFILESEP = /
 DFSEP = $(DIRFILESEP)
 NAME = Alien::Jerl
 NAME_SYM = Alien_Jerl
-VERSION = 1.04
+VERSION = 1.05
 VERSION_MACRO = VERSION
-VERSION_SYM = 1_04
+VERSION_SYM = 1_05
 DEFINE_VERSION = -D$(VERSION_MACRO)=\"$(VERSION)\"
-XS_VERSION = 1.04
+XS_VERSION = 1.05
 XS_VERSION_MACRO = XS_VERSION
 XS_DEFINE_VERSION = -D$(XS_VERSION_MACRO)=\"$(XS_VERSION)\"
 INST_ARCHLIB = blib/arch
@@ -259,7 +259,7 @@ RCS_LABEL = rcs -Nv$(VERSION_SYM): -q
 DIST_CP = best
 DIST_DEFAULT = tardist
 DISTNAME = Alien-Jerl
-DISTVNAME = Alien-Jerl-1.04
+DISTVNAME = Alien-Jerl-1.05
 
 
 # --- MakeMaker macro section:
@@ -480,7 +480,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) Generating META.yml
 	$(NOECHO) $(ECHO) '--- #YAML:1.0' > META_new.yml
 	$(NOECHO) $(ECHO) 'name:               Alien-Jerl' >> META_new.yml
-	$(NOECHO) $(ECHO) 'version:            1.04' >> META_new.yml
+	$(NOECHO) $(ECHO) 'version:            1.05' >> META_new.yml
 	$(NOECHO) $(ECHO) 'abstract:           mJERL is a mips compiled micro perl that runs in a JVM' >> META_new.yml
 	$(NOECHO) $(ECHO) 'author:' >> META_new.yml
 	$(NOECHO) $(ECHO) '    - michaelt shomsky <17michaelt@gmail.com>' >> META_new.yml
@@ -767,7 +767,7 @@ testdb_static :: testdb_dynamic
 # --- MakeMaker ppd section:
 # Creates a PPD (Perl Package Description) for a binary distribution.
 ppd :
-	$(NOECHO) $(ECHO) '<SOFTPKG NAME="$(DISTNAME)" VERSION="1.04">' > $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '<SOFTPKG NAME="$(DISTNAME)" VERSION="1.05">' > $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <ABSTRACT>mJERL is a mips compiled micro perl that runs in a JVM</ABSTRACT>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <AUTHOR>michaelt shomsky &lt;17michaelt@gmail.com&gt;</AUTHOR>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <IMPLEMENTATION>' >> $(DISTNAME).ppd
