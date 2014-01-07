@@ -1,19 +1,28 @@
 use ExtUtils::MakeMaker;
 
 # if java is not available to the commandline, there will be problems, let them know
-my $javaIsMissingMessage = 'Alien::Jerl requires Java to be available to the commandline'; 
+my $javaIsMissingMessage = 'Java is mising ... Alien::Jerl requires Java to be available to the commandline'; 
 
 # Pattern for non *nix errors that will find its way to standard out
-my $nonNixError = 'Error';
+my $nonNixError = 'error';
+
+my $ignoreThisError = 'Could not create';
 
 # check for Java
 print "[Alien::Jerl] ... do you have java available to the commandline ? ...\n";
-my $commandlineJava  = `java -version`;
-   $commandlineJava .= `java -version 2>&1`;
-if (!$commandlineJava || $commandlineJava =~ /$nonNixError/) {
+my $commandlineJava = `java -version 2>&1` || '';
+if (!$commandlineJava) {
+    $commandlineJava  = `java -version`;   
+}
+
+if ((!$commandlineJava || 
+     $commandlineJava =~ m/$nonNixError/ig) && 
+     !($commandlineJava =~ m/$ignoreThisError/ig) ) {
+    print "ERROR [Alien::Jerl] $commandlineJava \n";
     print "$javaIsMissingMessage\n\n";
     exit(1);
 }
+print "[Alien::Jerl] $commandlineJava \n";
 print "[Alien::Jerl] ... yes 'java -version' is available .\n";
 
 # Initial checks for Java have passed, generate the makefile
