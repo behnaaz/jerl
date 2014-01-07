@@ -6,8 +6,6 @@ my $javaIsMissingMessage = 'Java is mising ... Alien::Jerl requires Java to be a
 # Pattern for non *nix errors that will find its way to standard out
 my $nonNixError = 'error';
 
-my $ignoreThisError = 'Could not create';
-
 # check for Java
 print "[Alien::Jerl] ... do you have java available to the commandline ? ...\n";
 my $commandlineJava = `java -version 2>&1` || '';
@@ -15,9 +13,8 @@ if (!$commandlineJava) {
     $commandlineJava  = `java -version`;   
 }
 
-if ((!$commandlineJava || 
-     $commandlineJava =~ m/$nonNixError/ig) && 
-     !($commandlineJava =~ m/$ignoreThisError/ig) ) {
+if (!$commandlineJava || 
+     $commandlineJava =~ m/$nonNixError/ig)  {
     print "ERROR [Alien::Jerl] $commandlineJava \n";
     print "$javaIsMissingMessage\n\n";
     exit(1);
