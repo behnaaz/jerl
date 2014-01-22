@@ -5,8 +5,8 @@ require Exporter;
 use base qw[Exporter];
 use vars qw[$VERSION @EXPORT %EXPORT_TAGS];
 
-$VERSION     = '1.09';
-@EXPORT      = qw[jerlVersion alienJerlVersion jerlMissingJVMMessage];
+$VERSION     = '1.10';
+@EXPORT      = qw[jerlVersion alienJerlVersion jerlMissingJVMMessage jerlOneLiner];
 %EXPORT_TAGS = ( ':all' => \@EXPORT );
 
 sub jerlMissingJVMMessage {
@@ -20,6 +20,24 @@ sub jerlVersion {
     return $jarVersion;    
 
 }
+
+sub jerlOneLiner {
+
+    my $oneLineProgram = shift;
+
+    # if there's no param, then do not run it, just return empty
+    if (!$oneLineProgram) {
+	print STDERR "[Warning] jerlOneLiner was empty or did not contain a program";
+	return '';
+    }
+
+    my $output = `java -jar lib/Alien/jerl.jar -e '$oneLineProgram'` || '';
+    
+    return $output    
+
+}
+
+
 
 sub alienJerlVersion {
     
@@ -93,6 +111,10 @@ Jerl allows perl to run within the JVM (not having to access any external libs).
 =head2 C<jerlVersion()>
 
 C<jerlVersion()> returns the current version of jerl from the Jar and of this package (multi line)
+
+=head2 C<jerlOneLiner( String )>
+
+C<jerlOneLiner( String )> Returns the output of a single line program which is passed in as an argument
 
 =over 4
 
