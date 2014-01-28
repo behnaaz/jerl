@@ -5,7 +5,7 @@ require Exporter;
 use base qw[Exporter];
 use vars qw[$VERSION @EXPORT %EXPORT_TAGS];
 
-$VERSION     = '1.10';
+$VERSION     = '1.11';
 @EXPORT      = qw[jerlVersion alienJerlVersion jerlMissingJVMMessage jerlOneLiner];
 %EXPORT_TAGS = ( ':all' => \@EXPORT );
 
