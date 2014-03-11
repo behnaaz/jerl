@@ -1,6 +1,16 @@
+Mar 11, 2011
+  From https://code.google.com/p/jerl/
+  * [MTS] (3/10/2014) Fixed https://code.google.com/p/jerl/issues/detail?id=21
+  * [MTS] (1/31/2014) Fixed download links to download only the JARs from the git repo
+  * [MTS] updated to Perl 5.18.2 from 5.18.1
+  * [MTS] updated to Perl 5.18.1 from 5.18
+  * [MTS] updated to Perl 5.18 from 5.16.2
+  * [MTS] Updated jerlEclipseSampleProject with a fixed ".classpath" file
+  * [MTS] updated to Perl 5.16.3 from 5.16.2
+
 June  14, 2011 
-    * [MTS] Started working with nestedvm
+  * [MTS] Started working with nestedvm
 
 April 8, 2012
-    * [MTS] Perl running form JAR.  First rough cut.  need to run more test
-    * [MTS] mklib directory works on DEBIAN 64bit box with dependencies built
+  * [MTS] Perl running form JAR.  First rough cut.  need to run more test
+  * [MTS] mklib directory works on DEBIAN 64bit box with dependencies built
